@@ -95,34 +95,69 @@ while(b>0){
 }
 console.log(sum);
 
-//fount the lettes
+fount the lettes
 
-// let x = [ "AZIZ"];
+let x = [ "AZIZ"];
 
-// for (let i = 0; i < x; i++) {
-    
-//     if ( x =="A" ) {
-//         console.log("A")
-//        }
-//        else if(x =="E"){
-//         console.log("E")
-//     }
-//     else if(x =="I"){
-//         console.log("I")
-//     }
-//     else if(x =="O"){
-//         console.log("O")
-//     }
-//     else if (x =="U"){
-//         console.log("U")
-//     }
-//     else {
-//         console.log("no vowel");
+for (let i = 0; i < x; i++) {
 
-//     }
-    
-// }
+    if ( x =="A" ) {
+        console.log("A")
+       }
+       else if(x =="E"){
+        console.log("E")
+    }
+    else if(x =="I"){
+        console.log("I")
+    }
+    else if(x =="O"){
+        console.log("O")
+    }
+    else if (x =="U"){
+        console.log("U")
+    }
+    else {
+        console.log("no vowel");
+
+    }
+
+}
 
 
 var letter =prompt("Enter the text"); 
+function vowelcount(oneword){
+    var count=0;
+    var vowels='aeiou';
+    for(let i=0;i<oneword.length;i++){
+        if(vowels.indexOf(oneword[i]) > -1){
+            count++;
+        }
+    }
+    return +count
+}
+
+var totalvowels=vowelcount('saasaeiofsdfdsfsfoos')
+console.log(`Total Vowels:`,totalvowels);
+
+
+
+
+const number = prompt("Enter the number");
+
+for (let i = 1; i <= 10; i++) {
+
+    const result = i * number;
+
+    console.log(`${number} * ${i} = ${result}`);
+    
+}
+
+// multiply
+let n = prompt('Enter a number:');
+for (let i = 1; i <= 100; i++) {
+    let t = n * i;
+    console.log(`Muliple of Number:`, t);
+}
+
+
 
